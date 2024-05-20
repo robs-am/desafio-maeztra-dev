@@ -33,3 +33,7 @@ console.log(verificarSequencia(12345678)); // true
 console.log(verificarSequencia(1223455678)); // true
 console.log(verificarSequencia(876543210)); // true
 console.log(verificarSequencia(152456457)); // false
+
+// Explicação
+
+/* A função encontrarDuplicados verifica um array de inteiros para encontrar números que se repetem. Ela usa um objeto para contar a ocorrência de cada número enquanto percorre o array. Em seguida, identifica quais números aparecem mais de uma vez e retorna um novo array contendo esses números duplicados. */
