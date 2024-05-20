@@ -36,4 +36,8 @@ console.log(verificarSequencia(152456457)); // false
 
 // Explicação
 
-/* A função encontrarDuplicados verifica um array de inteiros para encontrar números que se repetem. Ela usa um objeto para contar a ocorrência de cada número enquanto percorre o array. Em seguida, identifica quais números aparecem mais de uma vez e retorna um novo array contendo esses números duplicados. */
+/* A função verificarSequencia verifica se os dígitos de um número estão em uma sequência crescente ou decrescente. Converti o número para uma string, assim podemos usar índices para acessar e comparar os caracteres diretamente.
+
+Foi usado um loop for para percorrer a string, excluindo o último dígito, pois estaremos sempre comparando um dígito com o próximo. Dentro do loop, convertemos os caracteres atuais e os próximos de volta para inteiros usando parseInt pra comparar os valores numéricos
+
+A comparação é feita usando a função Math.abs, que calcula a diferença absoluta entre dois números. Se a diferença entre quaisquer dois dígitos adjacentes for maior que 1, a função retorna false, indicando que os dígitos não estão em uma sequência aceitável. Se o loop completa sem encontrar nenhuma diferença maior que 1, todos os dígitos são sequenciais, e a função retorna true */

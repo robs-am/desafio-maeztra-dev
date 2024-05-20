@@ -4,7 +4,6 @@ Exemplo:
 Input [4,5,44,98,4,5,6,7] → Output [4,5] */
 
 function encontrarDuplicados(array) {
-  // Objeto para contar as ocorrências de cada número
   let contagem = {};
 
   for (let i = 0; i < array.length; i++) {
@@ -17,10 +16,8 @@ function encontrarDuplicados(array) {
     }
   }
 
-  // Array para armazenar os números duplicados
   let duplicados = [];
 
-  // Percorrer o objeto de contagem para identificar duplicados
   for (let numero in contagem) {
     if (contagem[numero] > 1) {
       duplicados.push(parseInt(numero));
@@ -33,3 +30,7 @@ function encontrarDuplicados(array) {
 // Testes
 console.log(encontrarDuplicados([4, 5, 44, 98, 4, 5, 6, 7])); // [4, 5]
 console.log(encontrarDuplicados([1, 2, 3, 4, 5])); // []
+
+// Explicação
+
+/* A função encontrarDuplicados verifica um array de inteiros para encontrar números que se repetem. Ela usa um objeto para contar a ocorrência de cada número enquanto percorre o array. Em seguida, identifica quais números aparecem mais de uma vez e retorna um novo array contendo esses números duplicados. */
