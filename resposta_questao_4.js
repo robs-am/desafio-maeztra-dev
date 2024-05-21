@@ -40,3 +40,5 @@ let matrizExemplo = [
   [1938, 1999],
 ];
 console.log(anosPessoasTrabalhando(matrizExemplo)); //
+
+// Foi feita uma iteração sobre cada par de anos na matriz, contando o número de pessoas trabalhando em cada ano usando um objeto  para armazenar essas contagens. Ao final, encontramos o ano ou anos com o maior número de pessoas trabalhando e os armazenamos em um array. A estrutura de dados utilizada é um objeto JavaScript para contabilizar o número de pessoas trabalhando em cada ano e um array para armazenar os anos com o maior número de pessoas trabalhando.
